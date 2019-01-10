@@ -1,0 +1,34 @@
+<table *ngIf = "studentDetail" class="table-fill" >
+  <!-- <ul class="nav navbar-nav navbar-right">
+      <li [routerLinkActive]="['active']" [routerLinkActiveOptions] = "{exact:true}"><a [routerLink]="['/studentdata']">Studnet Data</a></li>
+     </ul> -->
+<thead>
+<tr>
+  <th colspan="2" class="text-center" >User Profile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> Creation Date  </td>
+<td>{{studentDetail.CreationDateAt}}</td>
+</tr>
+<tr>
+<td>English</td>
+<td>{{studentDetail.English}}</td>
+</tr>
+<tr>
+<td>Mathamatics</td>
+<td>{{studentDetail.Matha}}</td>
+</tr>
+<tr>
+  <td>Hindi</td>
+  <td>{{studentDetail.Hindi}}</td>
+  </tr>
+<tr>
+<td colspan="2" class="text-center"  >
+<input type="button" (click) ="onLogout()" value="Back"/>
+</td>
+</tr>
+</tbody>
+
+</table>
